@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <FIELD_INFO>
+    <FIELD_TITLE>1</FIELD_TITLE>
+    <FIELD_TYPE>TextBrowser</FIELD_TYPE>
+    <FIELD_GROUP_ID>1[1],2[2],3[3]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>2</FIELD_TITLE>
+    <FIELD_TYPE>CheckBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>1[1],2[2],3[3]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>3</FIELD_TITLE>
+    <FIELD_TYPE>TextBrowser_S</FIELD_TYPE>
+    <FIELD_GROUP_ID>1[1],2[2],3[3]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+</NewDataSet>

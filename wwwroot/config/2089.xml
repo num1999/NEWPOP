@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <FIELD_INFO>
+    <FIELD_TITLE>Embeded PC</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+</NewDataSet>

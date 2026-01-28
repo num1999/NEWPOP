@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ATTR_INFO>
+    <SID>cls@</SID>
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <NO>0</NO>
+    <WIDTH>50%</WIDTH>
+    <HEIGHT>100%</HEIGHT>
+    <COLSPAN>1</COLSPAN>
+    <ROWSPAN>1</ROWSPAN>
+    <TITLE />
+    <SID>@</SID>
+    <CONTENT />
+    <CHECK />
+    <EDIT />
+    <EDITURL />
+    <EDIT_ADDNEW />
+    <SAVE_SID>@</SAVE_SID>
+    <DEL_SID>@</DEL_SID>
+    <POPUP />
+    <POPUPURL />
+    <POPUP_SID1>@</POPUP_SID1>
+    <POPUP_SID2>@</POPUP_SID2>
+    <CHART />
+    <CHART_H>NaNpx</CHART_H>
+    <CHART_LABEL_COL />
+    <CHART_DATA_COL />
+    <LINKEDGRID />
+    <LINKEDGRID_TITLE />
+    <LINKEDGRID_URL />
+    <LINKEDGRID_ADDNEW />
+    <LINKEDGRID_H>NaNpx</LINKEDGRID_H>
+    <LINKEDGRID_SID>@</LINKEDGRID_SID>
+    <LINKEDGRID_SAVE_SID>@</LINKEDGRID_SAVE_SID>
+    <LINKEDGRID_DEL_SID>@</LINKEDGRID_DEL_SID>
+    <CHART_STYLE />
+    <CHART_LEGEND />
+    <LINKEDCHART_STYLE />
+    <CALLBACK_INTERVAL />
+    <CALLBACK_URL />
+    <LINKEDGRID_CHECK />
+    <TOPN />
+    <HIDE_HEADER />
+    <VISIBLE />
+  </LAYOUT_INFO>
+</NewDataSet>

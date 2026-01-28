@@ -1,0 +1,544 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ATTR_INFO>
+    <SID>PK_WEB.sp_code_group</SID>
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <no>0</no>
+    <width>100%</width>
+    <height>100%</height>
+    <colspan>1</colspan>
+    <rowspan>1</rowspan>
+    <title />
+    <sid>PK_WEB.sp_code_list</sid>
+    <content>grid</content>
+    <content_url />
+    <grid_topn />
+    <grid_check>false</grid_check>
+    <chart_style />
+    <edit>true</edit>
+    <edit_url />
+    <edit_addnew_disable>false</edit_addnew_disable>
+    <edit_save>PK_WEB.sp_code_SAVE</edit_save>
+    <edit_del />
+    <popup>false</popup>
+    <popup_url />
+    <popup_evt />
+    <popup_sid1 />
+    <popup_sid2 />
+    <linked>false</linked>
+    <linked_position>bottom</linked_position>
+    <linked_height>50%</linked_height>
+    <linked_count />
+    <linked_content />
+    <linked_url />
+    <linked_title />
+    <linked_sid />
+    <linked_save />
+    <linked_delete />
+    <linked_edit_url />
+    <linked_addnew_disable>false</linked_addnew_disable>
+    <linked_check>false</linked_check>
+    <linked_auto_refresh>false</linked_auto_refresh>
+    <linked_chart_style />
+    <linked_chart_label_col />
+    <linked_chart_data_col />
+    <linked_size>50%</linked_size>
+    <linked_content2 />
+    <linked_url2 />
+    <linked_title2 />
+    <linked_sid2 />
+    <linked_save2 />
+    <linked_delete2 />
+    <linked_edit_url2 />
+    <linked_addnew_disable2>false</linked_addnew_disable2>
+    <linked_check2>false</linked_check2>
+    <linked_auto_refresh2>false</linked_auto_refresh2>
+    <linked_chart_style2 />
+    <linked_chart_label_col2 />
+    <linked_chart_data_col2 />
+    <linked_size2>50%</linked_size2>
+    <visible />
+  </LAYOUT_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>코드명</FIELD_TITLE>
+    <FIELD_TYPE>TextBrowser</FIELD_TYPE>
+    <FIELD_GROUP_ID>multi_test</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>사용여부</FIELD_TITLE>
+    <FIELD_TYPE>RadioButton</FIELD_TYPE>
+    <FIELD_GROUP_ID>사용[O],미사용[X]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@GROUP</COLUMN_NAME>
+    <COLUMN_TITLE>GROUP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>특수문자</COLUMN_NAME>
+    <COLUMN_TITLE>특수문자</COLUMN_TITLE>
+    <INPUT_TYPE>RadioButton</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>사용[0], 미사용[1]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>숫자</COLUMN_NAME>
+    <COLUMN_TITLE>숫자</COLUMN_TITLE>
+    <INPUT_TYPE>RadioButton</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>사용[0], 미사용[1]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>알파벳</COLUMN_NAME>
+    <COLUMN_TITLE>알파벳</COLUMN_TITLE>
+    <INPUT_TYPE>RadioButton</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>사용[0], 미사용[1]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>최근 사용 암호 갯수</COLUMN_NAME>
+    <COLUMN_TITLE>최근 사용 암호 갯수</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>비밀번호 사용주기(개월)</COLUMN_NAME>
+    <COLUMN_TITLE>비밀번호 사용주기(개월)</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@Valid</COLUMN_NAME>
+    <COLUMN_TITLE>사용유무</COLUMN_TITLE>
+    <INPUT_TYPE>RadioButton</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>O[0],X[1]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>사용유무</COLUMN_NAME>
+    <COLUMN_TITLE>사용유무</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>날짜</COLUMN_NAME>
+    <COLUMN_TITLE>날짜</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>USER</COLUMN_NAME>
+    <COLUMN_TITLE>USER</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@KEY</COLUMN_NAME>
+    <COLUMN_TITLE>KEY</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>사업부코드</COLUMN_NAME>
+    <COLUMN_TITLE>사업부코드</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>사업부명</COLUMN_NAME>
+    <COLUMN_TITLE>사업부명</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>플랜트코드</COLUMN_NAME>
+    <COLUMN_TITLE>플랜트코드</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>불량그룹</COLUMN_NAME>
+    <COLUMN_TITLE>불량그룹</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>그룹명</COLUMN_NAME>
+    <COLUMN_TITLE>그룹명</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>대상공정</COLUMN_NAME>
+    <COLUMN_TITLE>대상공정</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>조치코드</COLUMN_NAME>
+    <COLUMN_TITLE>조치코드</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>조치명</COLUMN_NAME>
+    <COLUMN_TITLE>조치명</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>라인해제</COLUMN_NAME>
+    <COLUMN_TITLE>라인해제</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>자릿수</COLUMN_NAME>
+    <COLUMN_TITLE>자릿수</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+    <tbs_hide_id />
+    <tbs_url />
+  </EDIT_INFO_0>
+</NewDataSet>

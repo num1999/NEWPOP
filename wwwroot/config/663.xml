@@ -1,0 +1,578 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <FIELD_INFO>
+    <FIELD_TITLE>기준일자</FIELD_TITLE>
+    <FIELD_TYPE>Date</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>기간</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>월[m],일[d]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>false</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <ATTR_INFO>
+    <SID>cls@</SID>
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <NO>0</NO>
+    <WIDTH>100%</WIDTH>
+    <HEIGHT>100%</HEIGHT>
+    <COLSPAN>1</COLSPAN>
+    <ROWSPAN>1</ROWSPAN>
+    <TITLE />
+    <SID>sp@pk_web_2000_workplan.sp_work_calendar_list</SID>
+    <CONTENT>grid</CONTENT>
+    <CHECK />
+    <EDIT />
+    <EDITURL />
+    <EDIT_ADDNEW />
+    <SAVE_SID>@</SAVE_SID>
+    <DEL_SID>@</DEL_SID>
+    <POPUP />
+    <POPUPURL />
+    <POPUP_SID1>@</POPUP_SID1>
+    <POPUP_SID2>@</POPUP_SID2>
+    <CHART />
+    <CHART_H>NaNpx</CHART_H>
+    <CHART_LABEL_COL />
+    <CHART_DATA_COL />
+    <LINKEDGRID />
+    <LINKEDGRID_TITLE />
+    <LINKEDGRID_URL />
+    <LINKEDGRID_ADDNEW />
+    <LINKEDGRID_H>NaNpx</LINKEDGRID_H>
+    <LINKEDGRID_SID>@</LINKEDGRID_SID>
+    <LINKEDGRID_SAVE_SID>@</LINKEDGRID_SAVE_SID>
+    <LINKEDGRID_DEL_SID>@</LINKEDGRID_DEL_SID>
+    <CHART_STYLE />
+    <CHART_LEGEND />
+    <LINKEDCHART_STYLE />
+    <CALLBACK_INTERVAL />
+    <CALLBACK_URL />
+    <LINKEDGRID_CHECK />
+    <TOPN />
+    <HIDE_HEADER />
+    <VISIBLE />
+  </LAYOUT_INFO>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@LIST1</COLUMN_NAME>
+    <COLUMN_TITLE>LIST1</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>1</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>계획일</COLUMN_NAME>
+    <COLUMN_TITLE>계획일</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>2</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>요일</COLUMN_NAME>
+    <COLUMN_TITLE>요일</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>3</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>근무유형</COLUMN_NAME>
+    <COLUMN_TITLE>근무유형</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>4</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>근무시작시간</COLUMN_NAME>
+    <COLUMN_TITLE>근무시작시간</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>5</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>근무마감시간</COLUMN_NAME>
+    <COLUMN_TITLE>근무마감시간</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>6</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>AWW</COLUMN_NAME>
+    <COLUMN_TITLE>AWW</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>7</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>AWP</COLUMN_NAME>
+    <COLUMN_TITLE>AWP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>8</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>AWWP</COLUMN_NAME>
+    <COLUMN_TITLE>AWWP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>9</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>AOW</COLUMN_NAME>
+    <COLUMN_TITLE>AOW</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>10</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>AOP</COLUMN_NAME>
+    <COLUMN_TITLE>AOP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>11</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>AOWP</COLUMN_NAME>
+    <COLUMN_TITLE>AOWP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>12</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>PWW</COLUMN_NAME>
+    <COLUMN_TITLE>PWW</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>13</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>PWP</COLUMN_NAME>
+    <COLUMN_TITLE>PWP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>14</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>PWWP</COLUMN_NAME>
+    <COLUMN_TITLE>PWWP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>15</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>POW</COLUMN_NAME>
+    <COLUMN_TITLE>POW</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>16</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>POP</COLUMN_NAME>
+    <COLUMN_TITLE>POP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>17</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>POWP</COLUMN_NAME>
+    <COLUMN_TITLE>POWP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>18</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@</COLUMN_NAME>
+    <COLUMN_TITLE />
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>19</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@1</COLUMN_NAME>
+    <COLUMN_TITLE>1</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>20</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@mwwp</COLUMN_NAME>
+    <COLUMN_TITLE>mwwp</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>21</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@2</COLUMN_NAME>
+    <COLUMN_TITLE>2</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>22</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@3</COLUMN_NAME>
+    <COLUMN_TITLE>3</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>23</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@mowp</COLUMN_NAME>
+    <COLUMN_TITLE>mowp</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>24</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@KEY</COLUMN_NAME>
+    <COLUMN_TITLE>KEY</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <FIELD_INFO0>
+    <FIELD_TITLE>생성</FIELD_TITLE>
+    <FIELD_TYPE>Button</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE>100,20</FIELD_BUTTON_IMAGE>
+    <FIELD_BUTTON_SID>sp@pk_web_2000_workplan.sp_save_calendar_all</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO0>
+</NewDataSet>

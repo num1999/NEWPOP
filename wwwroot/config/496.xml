@@ -1,0 +1,388 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <FIELD_INFO>
+    <FIELD_TITLE>플랜트</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>PLANT_ID</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>false</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>작업장</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>EQUIP</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>사용여부</FIELD_TITLE>
+    <FIELD_TYPE>RadioButton</FIELD_TYPE>
+    <FIELD_GROUP_ID>사용[1],미사용[0],전체[*]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>false</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <ATTR_INFO>
+    <SID>cls@</SID>
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <NO>0</NO>
+    <WIDTH>100%</WIDTH>
+    <HEIGHT>100%</HEIGHT>
+    <COLSPAN>1</COLSPAN>
+    <ROWSPAN>1</ROWSPAN>
+    <TITLE />
+    <SID>sp@pk_load_code.sp_equip_list</SID>
+    <CONTENT>grid</CONTENT>
+    <CHECK />
+    <EDIT>true</EDIT>
+    <EDITURL />
+    <EDIT_ADDNEW />
+    <SAVE_SID>sp@pk_save_code.sp_equip_list</SAVE_SID>
+    <DEL_SID>sp@pk_delete_code.sp_equip_list</DEL_SID>
+    <POPUP />
+    <POPUPURL />
+    <POPUP_SID1>@</POPUP_SID1>
+    <POPUP_SID2>@</POPUP_SID2>
+    <CHART />
+    <CHART_H>NaNpx</CHART_H>
+    <CHART_LABEL_COL />
+    <CHART_DATA_COL />
+    <LINKEDGRID />
+    <LINKEDGRID_TITLE />
+    <LINKEDGRID_URL />
+    <LINKEDGRID_ADDNEW />
+    <LINKEDGRID_H>NaNpx</LINKEDGRID_H>
+    <LINKEDGRID_SID>@</LINKEDGRID_SID>
+    <LINKEDGRID_SAVE_SID>@</LINKEDGRID_SAVE_SID>
+    <LINKEDGRID_DEL_SID>@</LINKEDGRID_DEL_SID>
+    <CHART_STYLE />
+    <CHART_LEGEND />
+    <LINKEDCHART_STYLE />
+    <CALLBACK_INTERVAL />
+    <CALLBACK_URL />
+    <LINKEDGRID_CHECK />
+    <TOPN />
+    <HIDE_HEADER />
+    <VISIBLE />
+  </LAYOUT_INFO>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@공장</COLUMN_NAME>
+    <COLUMN_TITLE>공장</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>PLANT_ID</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>작업장</COLUMN_NAME>
+    <COLUMN_TITLE>작업장</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>작업장명칭</COLUMN_NAME>
+    <COLUMN_TITLE>작업장명칭</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>모드</COLUMN_NAME>
+    <COLUMN_TITLE>모드</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>자동[A],수동[M]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@지그비번호</COLUMN_NAME>
+    <COLUMN_TITLE>지그비번호</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@실적공정</COLUMN_NAME>
+    <COLUMN_TITLE>실적공정</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>모니터링</COLUMN_NAME>
+    <COLUMN_TITLE>모니터링</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>O[1],X[0]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>표준 C/T</COLUMN_NAME>
+    <COLUMN_TITLE>표준 C/T</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>직영인원</COLUMN_NAME>
+    <COLUMN_TITLE>직영인원</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>외주인원</COLUMN_NAME>
+    <COLUMN_TITLE>외주인원</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>사용여부</COLUMN_NAME>
+    <COLUMN_TITLE>사용여부</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>O[1],X[0]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@KEY</COLUMN_NAME>
+    <COLUMN_TITLE>KEY</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>PDP 약자</COLUMN_NAME>
+    <COLUMN_TITLE>PDP 약자</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>무작지알람</COLUMN_NAME>
+    <COLUMN_TITLE>무작지알람</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>X[1],O[0]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>팀정보</COLUMN_NAME>
+    <COLUMN_TITLE>팀정보</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>EQUIP_TEAM</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+</NewDataSet>

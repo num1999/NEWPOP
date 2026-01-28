@@ -1,0 +1,554 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <FIELD_INFO>
+    <FIELD_TITLE>계획일자</FIELD_TITLE>
+    <FIELD_TYPE>Date</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>~</FIELD_TITLE>
+    <FIELD_TYPE>Date</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>라인</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>WIP_DIV</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>false</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>LOT NO</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>반제품코드</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>확정여부</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>Y[Y], N[N]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL>N</FIELD_URL>
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>분류구분</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>재분류[Y], 정상분류[N]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL>N</FIELD_URL>
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>사용자</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL>@user</FIELD_URL>
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <ATTR_INFO>
+    <SID />
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <NO>0</NO>
+    <WIDTH>100%</WIDTH>
+    <HEIGHT>100%</HEIGHT>
+    <COLSPAN>1</COLSPAN>
+    <ROWSPAN>1</ROWSPAN>
+    <TITLE />
+    <SID>pk_web_1100.sp_route_order_list</SID>
+    <CONTENT>grid</CONTENT>
+    <EDIT>true</EDIT>
+    <POPUP>false</POPUP>
+    <POPUP_SID1>@</POPUP_SID1>
+    <POPUP_SID2>@</POPUP_SID2>
+    <CHART_STYLE />
+    <VISIBLE />
+    <content_url />
+    <grid_topn>10</grid_topn>
+    <grid_check>true</grid_check>
+    <edit_url />
+    <edit_addnew_disable>false</edit_addnew_disable>
+    <edit_save>@</edit_save>
+    <edit_del>pk_web_1100.sp_order_delete</edit_del>
+    <popup_url />
+    <popup_evt>row</popup_evt>
+    <linked>true</linked>
+    <linked_position>bottom</linked_position>
+    <linked_height>35%</linked_height>
+    <linked_count>2</linked_count>
+    <linked_content>grid</linked_content>
+    <linked_url />
+    <linked_title />
+    <linked_sid>pk_web_1100.sp_bom_list</linked_sid>
+    <linked_save>@</linked_save>
+    <linked_delete>@</linked_delete>
+    <linked_edit_url />
+    <linked_addnew_disable>true</linked_addnew_disable>
+    <linked_check>false</linked_check>
+    <linked_auto_refresh>false</linked_auto_refresh>
+    <linked_chart_style />
+    <linked_chart_label_col />
+    <linked_chart_data_col />
+    <linked_size>50%</linked_size>
+    <linked_content2>grid</linked_content2>
+    <linked_url2 />
+    <linked_title2 />
+    <linked_sid2>pk_web_1100.sp_route_order_seq_list</linked_sid2>
+    <linked_save2>@</linked_save2>
+    <linked_delete2>@</linked_delete2>
+    <linked_edit_url2 />
+    <linked_addnew_disable2>true</linked_addnew_disable2>
+    <linked_check2>false</linked_check2>
+    <linked_auto_refresh2>false</linked_auto_refresh2>
+    <linked_chart_style2 />
+    <linked_chart_label_col2 />
+    <linked_chart_data_col2 />
+    <linked_size2>50%</linked_size2>
+  </LAYOUT_INFO>
+  <FIELD_INFO0>
+    <FIELD_TITLE>투입확정</FIELD_TITLE>
+    <FIELD_TYPE>Button</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>sp@pk_web_1100.sp_route_order_confirm</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO0>
+  <FIELD_INFO0>
+    <FIELD_TITLE>확정취소</FIELD_TITLE>
+    <FIELD_TYPE>Button</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>sp@pk_web_1100.sp_route_order_cancel</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>확정여부</COLUMN_NAME>
+    <COLUMN_TITLE>확정여부</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY>true</READONLY>
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>라인</COLUMN_NAME>
+    <COLUMN_TITLE>라인</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY>true</READONLY>
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@KEY</COLUMN_NAME>
+    <COLUMN_TITLE>KEY</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>LOT NO</COLUMN_NAME>
+    <COLUMN_TITLE>LOT NO</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY>true</READONLY>
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>계획일자</COLUMN_NAME>
+    <COLUMN_TITLE>계획일자</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>자재번호</COLUMN_NAME>
+    <COLUMN_TITLE>자재번호</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>생산버전</COLUMN_NAME>
+    <COLUMN_TITLE>생산버전</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>LOT 수량</COLUMN_NAME>
+    <COLUMN_TITLE>LOT 수량</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>Tray당 수량</COLUMN_NAME>
+    <COLUMN_TITLE>Tray당 수량</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>Tray수</COLUMN_NAME>
+    <COLUMN_TITLE>Tray수</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>Target BIN</COLUMN_NAME>
+    <COLUMN_TITLE>Target BIN</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>생성일자</COLUMN_NAME>
+    <COLUMN_TITLE>생성일자</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@PARAM</COLUMN_NAME>
+    <COLUMN_TITLE>PARAM</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>CHIP</COLUMN_NAME>
+    <COLUMN_TITLE>CHIP</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>L/F</COLUMN_NAME>
+    <COLUMN_TITLE>L/F</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>형광체</COLUMN_NAME>
+    <COLUMN_TITLE>형광체</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@DEL</COLUMN_NAME>
+    <COLUMN_TITLE>삭제사유</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY>false</READONLY>
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL />
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+</NewDataSet>

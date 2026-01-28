@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["SSCPOP"] - NEWPOP</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NEWPOP.styles.css" asp-append-version="true" />
+    <style>
+        /* 3분할 레이아웃 스타일 */
+        .wrapper { display: flex; flex-direction: column; height: 100vh; }
+        .top-menu { height: 60px; background: #343a40; color: white; display: flex; align-items: center; padding: 0 20px; }
+        .main-container { display: flex; flex: 1; overflow: hidden; }
+        .left-side { width: 220px; background: #f8f9fa; border-right: 1px solid #dee2e6; padding: 15px; }
+        .right-content { flex: 1; padding: 20px; overflow-y: auto; }
+        .menu-link { cursor: pointer; color: #333; text-decoration: none; display: block; padding: 8px; }
+        .menu-link:hover { background: #e9ecef; }
+
+        /* 마우스 오버 시 살짝 떠오르는 효과 */
+        .btn-outline-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* 왼쪽 메뉴 액티브 스타일 */
+        .list-group-item.active {
+            background-color: #e7f1ff !important;
+            color: #0d6efd !important;
+            font-weight: bold;
+        }
+
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+            padding-left: 25px; /* 호버 시 살짝 오른쪽으로 이동하는 애니메이션 */
+            transition: all 0.2s;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    @if (ViewData["HideMenu"] != null)
+    {
+        @RenderBody()
+    }
+    else
+    {
+        <div class="wrapper">
+            <header class="top-menu">
+                <h5 class="mb-0 me-4">POP SYSTEM</h5>
+
+                @* [수정] 여기에 Main.cshtml의 메뉴 내용이 들어오도록 RenderSection을 활용하거나, 
+                   직속 자식인 RenderBody에서 처리하도록 비워둡니다. *@
+                <div class="d-flex flex-grow-1">
+                    @RenderSection("TopMenu", required: false)
+                </div>
+
+                <div class="ms-auto">
+                    <span class="text-white-50 me-2">@Context.Session.GetString("UserName")님</span>
+                    <a asp-page="/Index" class="btn btn-danger btn-sm">로그아웃</a>
+                </div>
+            </header>
+
+            <div class="main-container">
+                @* 클래스명을 스타일시트와 일치시킴 (.main-container) *@
+                <nav class="left-side">
+                    <h6 class="text-muted fw-bold">세부 메뉴</h6>
+                    <hr />
+                    @RenderSection("SubMenu", required: false)
+                </nav>
+
+                <main class="right-content">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    }
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @* <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">NEWPOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - NEWPOP - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionA sync("Scripts", required: false)*@
+</body>
+</html>

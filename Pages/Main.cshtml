@@ -1,0 +1,462 @@
+﻿@page
+@model NEWPOP.Pages.MainModel
+@using System.Data  @* 이 부분을 추가하세요! *@
+@Model.MainMenus?.Rows.Count
+@* <div class="alert alert-info py-1">로드된 메뉴 개수: @Model.MainMenus.Rows.Count 개</div> *@
+@section TopMenu {
+    <div class="btn-group" role="group">
+        @if (Model.MainMenus != null)
+        {
+            @foreach (System.Data.DataRow row in Model.MainMenus.Rows)
+            {
+                bool isActive = Request.Query["topMenuId"] == row["MENU_ID"].ToString();
+                <a asp-page="/Main"
+                   asp-route-topMenuId="@row["MENU_ID"]"
+                   class="btn @(isActive ? "btn-primary" : "btn-outline-light") btn-md px-4 mx-1"
+                   style="border-radius: 20px; transition: all 0.3s;">
+                    <i class="bi bi-folder2-open me-1"></i> @row["TITLE"]
+                </a>
+            }
+        }
+    </div>
+}
+
+
+@* 오른쪽 @* 메인 화면 내용 *@
+<div class="container-fluid p-4">
+    @if (!string.IsNullOrEmpty(Request.Query["selectedMenuId"]))
+    {
+        @* 1. 상세 페이지 헤더 (선택된 메뉴 정보) *@
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-white">
+                <h5 class="mb-0 text-primary">
+                    <i class="bi bi-file-earmark-text me-2"></i>
+                    메뉴 ID: @Request.Query["selectedMenuId"] 상세 화면
+                </h5>
+            </div>
+        </div>
+
+        @* 2. XML 기반 동적 검색 폼 *@
+        <div class="card shadow-sm mb-4">
+            <div class="card-body bg-light">
+                <form method="post" asp-page-handler="Search" asp-route-selectedMenuId="@Request.Query["selectedMenuId"]">
+                    <div class="row g-2 align-items-end">
+                        @foreach (var field in Model.DynamicFields)
+                        {
+                            <div class="col-md-2 col-sm-4">
+                                <label class="form-label small fw-bold">@field.Title</label>
+                                @if (field.Type == "TextBox")
+                                {
+                                    <input type="text" name="@field.Title" class="form-control form-control-sm" value="@field.DefaultValue" />
+                                }
+                                else if (field.Type == "Date")
+                                {
+                                    @* HTML5 날짜 컨트롤 사용 *@
+                                    <input type="date" name="@field.Title" class="form-control form-control-sm" value="@field.DefaultValue" />
+                                } 
+                                else if (field.Type == "ComboBox")
+                                {
+                                    <select name="@field.Title" class="form-select form-select-sm">
+                                        <option value="">-- 전체 --</option>
+                                        @foreach (var opt in field.Options)
+                                        {
+                                            <option value="@opt.Value">@opt.Text</option>
+                                        }
+                                    </select>
+                                }
+                                else if (field.Type == "RadioButton")
+                                {
+                                    <div class="d-flex align-items-center gap-2 border rounded px-2 bg-white" style="height: 28px;">
+                                        @foreach (var opt in field.Options)
+                                        {
+                                            <div class="form-check form-check-inline m-0">
+                                                <input class="form-check-input" type="radio" name="@field.Title"
+                                                       id="@(field.Title + "_" + opt.Value)" value="@opt.Value"
+                                                       @(field.Options.First() == opt ? "checked" : "")>
+                                                <label class="form-check-label" for="@(field.Title + "_" + opt.Value)">@opt.Text</label>
+                                            </div>
+                                        }
+                                    </div>
+                                }
+                                else if (field.Type == "DateTime")
+                                {
+                                    @* type="datetime-local"을 사용하여 날짜와 시간을 동시에 입력받습니다 *@
+                                    <input type="datetime-local"
+                                           name="@field.Title"
+                                           class="form-control form-control-sm"
+                                           value="@field.DefaultValue"
+                                           style="font-size: 0.8rem; padding: 1px 4px;" />
+                                }
+                            </div>
+                        }
+                        @* 검색 버튼도 크기를 줄이고 인라인으로 배치 *@
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary btn-sm py-1 shadow-sm" style="height: 28px; font-size: 0.85rem;">
+                                <i class="bi bi-search"></i> 검색
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        @* 3. 검색 결과 그리드 (데이터가 있을 때만 표시) *@
+        @if (Model.GridData != null)
+        {
+            <div class="table-responsive shadow-sm" style="max-height: 600px; overflow-y: auto;">
+                <table class="table table-sm table-hover table-bordered">
+                    <thead class="table-dark sticky-top">
+                        <tr>
+                            @foreach (System.Data.DataColumn col in Model.GridData.Columns)
+                            {
+                                if (!col.ColumnName.StartsWith("@@"))
+                                {
+                                    <th class="text-center small">@col.ColumnName</th>
+                                }
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (System.Data.DataRow row in Model.GridData.Rows)
+                        {
+                            <tr>
+                                @foreach (System.Data.DataColumn col in Model.GridData.Columns)
+                                {
+                                    if (!col.ColumnName.StartsWith("@@"))
+                                    {
+                                        <td class="small">@row[col.ColumnName]</td>
+                                    }
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info text-center">
+                <i class="bi bi-info-circle me-2"></i> 검색 조건을 입력하고 검색 버튼을 눌러주세요.
+            </div>
+        }
+    }
+    else
+    {
+        @* 4. 아무 메뉴도 선택하지 않았을 때 나오는 초기 화면 *@
+        <div class="text-center mt-5 py-5 border rounded bg-light shadow-sm">
+            <i class="bi bi-person-circle display-4 text-primary"></i>
+            <h4 class="mt-3">안녕하세요, @Model.UserID 님!</h4>
+            <p class="text-muted">상단 메뉴를 선택한 후, 왼쪽 세부 메뉴를 클릭하여 업무를 시작하세요.</p>
+        </div>
+    }
+</div>
+
+@section SubMenu {
+    <style>
+        /* 폴더 내부 메뉴 아이템 스타일 */
+        .sub-item {
+            padding-left: 40px !important;
+            font-size: 0.88rem;
+            border: none !important;
+            color: #495057;
+        }
+
+            /* 마우스 오버 시 효과 */
+            .sub-item:hover {
+                background-color: #f1f3f5 !important;
+                padding-left: 45px !important;
+                transition: all 0.2s ease;
+            }
+
+            /* 활성화된 메뉴 강조 */
+            .sub-item.active {
+                background-color: #e7f1ff !important;
+                color: #0d6efd !important;
+            }
+
+        /* 1. 왼쪽 사이드바 전체 레이아웃 */
+        .left-side {
+            width: 250px;
+            height: calc(100vh - 60px); /* 전체 화면 높이에서 상단 메뉴(60px)를 뺌 */
+            position: sticky; /* 화면에 고정 */
+            top: 60px;
+            display: flex;
+            flex-direction: column; /* 내부 요소 수직 배치 */
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+        }
+
+        /* 2. 실제 메뉴 리스트가 들어가는 영역 (여기에 스크롤 발생) */
+        .menu-scroll-container {
+            flex: 1; /* 남은 공간 모두 차지 */
+            overflow-y: auto; /* 세로 내용이 많으면 자동으로 스크롤 생성 */
+            overflow-x: hidden; /* 가로 스크롤은 방지 */
+        }
+
+            /* 3. 스크롤바 디자인 (선택 사항: 더 깔끔하게 보임) */
+            .menu-scroll-container::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .menu-scroll-container::-webkit-scrollbar-thumb {
+                background-color: #ced4da;
+                border-radius: 10px;
+            }
+
+            .menu-scroll-container::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+
+    /* 폴더 버튼 기본 스타일 */
+    .folder-btn {
+        background-color: #f8f9fa !important;
+        border-bottom: 1px solid #eee !important;
+    }
+        /* 폴더 버튼 회전 애니메이션 */
+        .folder-btn.collapsed .bi-chevron-down {
+            transform: rotate(-90deg);
+            transition: transform 0.2s;
+        }
+
+        .folder-btn .bi-chevron-down {
+            transition: transform 0.2s;
+        }
+        /* 1. 레이블과 컨트롤 간의 간격 축소 */
+        .form-label {
+            margin-bottom: 2px !important;
+            font-size: 0.8rem !important; /* 레이블 폰트 축소 */
+            color: #555;
+        }
+
+        /* 2. 입력 컨트롤 높이 및 폰트 축소 */
+        .form-control-sm, .form-select-sm {
+            height: 28px !important; /* 표준 sm보다 더 작게 설정 */
+            font-size: 0.85rem !important;
+            padding: 2px 5px !important;
+        }
+
+        /* 3. 라디오 버튼 영역 조밀하게 */
+        .form-check {
+            min-height: 1.2rem !important;
+            margin-bottom: 0 !important;
+        }
+
+        .form-check-input {
+            width: 0.9rem !important;
+            height: 0.9rem !important;
+            margin-top: 0.25em !important;
+        }
+
+        .form-check-label {
+            font-size: 0.85rem !important;
+        }
+
+        /* 4. 검색 폼이 들어있는 Row의 간격 축소 */
+        .row.g-3 {
+            --bs-gutter-y: 0.5rem !important; /* 행 간격 축소 */
+            --bs-gutter-x: 0.75rem !important; /* 열 간격 축소 */
+        }
+        /* DateTime 컨트롤의 가독성을 위해 폰트를 살짝 더 작게 조정 */
+        input[type="datetime-local"].form-control-sm {
+            letter-spacing: -0.5px;
+            height: 28px !important;
+        }
+
+        /* 화면이 좁을 때 DateTime 필드가 너무 깨지지 않도록 최소 너비 설정 */
+        .col-datetime {
+            min-width: 160px;
+        }
+    </style>
+    <div class="menu-scroll-container">
+        <div class="list-group list-group-flush shadow-sm">
+            @if (Model.SubMenus != null && Model.SubMenus.Rows.Count > 0)
+            {
+                string currentTopId = Request.Query["topMenuId"].ToString()?.Trim() ?? "";
+                string currentSelectedId = Request.Query["selectedMenuId"].ToString()?.Trim() ?? "";
+
+                // 1단계: 현재 상단 메뉴 바로 아래에 있는 항목들 추출 (폴더 및 일반 메뉴 포함)
+                var directChildren = Model.SubMenus.AsEnumerable().Where(r =>
+                {
+                    string parentPath = r["PARENT"]?.ToString()?.Trim() ?? "";
+                    return parentPath == currentTopId || parentPath.EndsWith("/" + currentTopId);
+                });
+
+                @foreach (var row in directChildren)
+                {
+                    string mid = row["MENU_ID"].ToString();
+                    string attr = row["ATTR"]?.ToString().Trim().ToUpper() ?? "I";
+
+                    if (attr == "F") // [케이스 1] 폴더인 경우
+                    {
+                        // 현재 폴더 하위의 진짜 메뉴들 찾기
+                        var children = Model.SubMenus.AsEnumerable().Where(c =>
+                        c["PARENT"].ToString().EndsWith("/" + mid) && c["ATTR"].ToString() != "F");
+
+                        bool hasActiveChild = children.Any(c => c["MENU_ID"].ToString() == currentSelectedId);
+
+                        <button class="list-group-item folder-btn d-flex justify-content-between align-items-center @(hasActiveChild ? "" : "collapsed")"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#child_@mid">
+                            <span>
+                                <i class="bi @(hasActiveChild ? "bi-folder2-open" : "bi-folder2") me-2 text-warning"></i>
+                                @row["TITLE"]
+                            </span>
+                            <i class="bi bi-chevron-down small text-muted"></i>
+                        </button>
+
+                        <div class="collapse @(hasActiveChild ? "show" : "")" id="child_@mid" style="background-color: #fcfcfc;">
+                            @foreach (var child in children)
+                            {
+                                bool isSelected = child["MENU_ID"].ToString() == currentSelectedId;
+                                <a asp-page="/Main"
+                                   asp-route-topMenuId="@currentTopId"
+                                   asp-route-selectedMenuId="@child["MENU_ID"]"
+                                   class="list-group-item sub-item @(isSelected ? "active fw-bold" : "")">
+                                    <i class="bi @(isSelected ? "bi-record-circle-fill" : "bi-record-circle") me-2"></i> @child["TITLE"]
+                                </a>
+                            }
+                        </div>
+                    }
+                    else // [케이스 2] 폴더 없이 바로 메뉴가 나오는 경우
+                    {
+                        bool isSelected = mid == currentSelectedId;
+                        <a asp-page="/Main"
+                           asp-route-topMenuId="@currentTopId"
+                           asp-route-selectedMenuId="@mid"
+                           class="list-group-item list-group-item-action @(isSelected ? "active fw-bold" : "")"
+                           style="border-left: 4px solid @(isSelected ? "#0d6efd" : "transparent");">
+                            <i class="bi bi-play-fill me-2 @(isSelected ? "text-primary" : "text-muted")"></i> @row["TITLE"]
+                        </a>
+                    }
+                }
+            }
+        </div>
+    </div>
+}
+
+@* <main class="right-content p-4">
+    @if (!string.IsNullOrEmpty(Request.Query["selectedMenuId"]))
+    {
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-0 text-primary">메뉴 ID: @Request.Query["selectedMenuId"] 상세 화면</h5>
+            </div>
+            <div class="card-body">
+                <p>선택하신 메뉴의 URL 정보: <strong>@Model.SubMenus?.AsEnumerable().FirstOrDefault(r => r["MENU_ID"].ToString() == Request.Query["selectedMenuId"])?["URL"]</strong></p>
+
+                <div class="alert alert-secondary">
+                    이곳에 [ @Request.Query["selectedMenuId"] ] 관련 데이터 그리드 또는 입력 폼을 로드합니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body bg-light">
+                <form method="post" id="searchForm">
+                    <div class="row g-3">
+                        @foreach (var field in Model.DynamicFields)
+                        {
+                            <div class="col-md-3">
+                                <label class="form-label small fw-bold">@field.Title</label>
+                                @if (field.Type == "TextBox")
+                                {
+                                    <input type="text" name="@field.Title" class="form-control form-control-sm" />
+                                }
+                                else if (field.Type == "ComboBox")
+                                {
+                                    <select name="@field.Title" class="form-select form-select-sm">
+                                        <option value="">-- 선택 --</option>
+                                        @* 여기서 GroupId를 이용해 DB에서 데이터를 가져와 채우는 로직 필요 
+                                    </select>
+                                }
+                            </div>
+                        }
+                        <div class="col-md-12 text-end">
+                            <button type="submit" class="btn btn-primary btn-sm px-4">
+                                <i class="bi bi-search"></i> 검색
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        @if (Model.GridData != null)
+        {
+            <div class="table-responsive mt-3" style="max-height: 600px; overflow-y: auto;">
+                <table class="table table-sm table-hover table-bordered border-secondary">
+                    <thead class="table-dark sticky-top">
+                        <tr>
+                            @foreach (DataColumn col in Model.GridData.Columns)
+                            {
+                                @* @@로 시작하는 관리용 컬럼은 숨김 처리 
+                                if (!col.ColumnName.StartsWith("@@"))
+                                {
+                                    <th class="text-center small">@col.ColumnName</th>
+                                }
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (DataRow row in Model.GridData.Rows)
+                        {
+                            <tr>
+                                @foreach (DataColumn col in Model.GridData.Columns)
+                                {
+                                    if (!col.ColumnName.StartsWith("@@"))
+                                    {
+                                        <td class="small">@row[col.ColumnName]</td>
+                                    }
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-2 text-end">
+                <span class="badge bg-secondary">Total: @Model.GridData.Rows.Count Rows</span>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="text-center mt-5 py-5 border rounded bg-light">
+            <i class="bi bi-arrow-left-circle display-4 text-muted"></i>
+            <h4 class="mt-3">업무를 선택해 주세요</h4>
+            <p class="text-muted">왼쪽 서브 메뉴를 클릭하면 상세 기능이 활성화됩니다.</p>
+        </div>
+    }
+</main> *@
+@* 
+@if (Model.GridData != null)
+{
+    <h4 class="mb-3">@Request.Query["sub"] 결과</h4>
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    @foreach (DataColumn col in Model.GridData.Columns)
+                    {
+                        <th>@col.ColumnName</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (DataRow row in Model.GridData.Rows)
+                {
+                    <tr>@foreach (var cell in row.ItemArray) {
+                    <td>@cell</td>
+                }
+    </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}
+else
+{
+    <div class="text-center mt-5 text-muted">
+        <h5>상단 메뉴를 선택한 후 왼쪽 세부 메뉴를 클릭하세요.</h5>
+    </div>
+} *@

@@ -1,0 +1,873 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <FIELD_INFO>
+    <FIELD_TITLE>라인</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>WIP_DIV</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>false</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>공정</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>LINE_ID</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data>value3='[1]'</FIELD_GROUP_REL_Data>
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>부서</FIELD_TITLE>
+    <FIELD_TYPE>ComboBox</FIELD_TYPE>
+    <FIELD_GROUP_ID>설비보전[A],설비기술[B],물류관리[C]</FIELD_GROUP_ID>
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>사번</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>사원명</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <FIELD_INFO>
+    <FIELD_TITLE>전화번호</FIELD_TITLE>
+    <FIELD_TYPE>TextBox</FIELD_TYPE>
+    <FIELD_GROUP_ID />
+    <FIELD_GROUP_ALL>true</FIELD_GROUP_ALL>
+    <FIELD_GROUP_REL_Data />
+    <FIELD_SQL />
+    <FIELD_GROUP_REL_Visible />
+    <FIELD_BUTTON_IMAGE />
+    <FIELD_BUTTON_SID>cls@</FIELD_BUTTON_SID>
+    <FIELD_URL />
+    <NOTNULL>false</NOTNULL>
+    <YEAR>true</YEAR>
+    <MONTH>true</MONTH>
+    <DAY>true</DAY>
+  </FIELD_INFO>
+  <ATTR_INFO>
+    <SID>cls@</SID>
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <NO>0</NO>
+    <WIDTH>100%</WIDTH>
+    <HEIGHT>100%</HEIGHT>
+    <COLSPAN>1</COLSPAN>
+    <ROWSPAN>1</ROWSPAN>
+    <TITLE />
+    <SID>sp@pk_web_3000.sp_emp_work_list</SID>
+    <CONTENT>grid</CONTENT>
+    <CHECK />
+    <EDIT>true</EDIT>
+    <EDITURL />
+    <EDIT_ADDNEW />
+    <SAVE_SID>sp@pk_web_3000.sp_emp_work_save</SAVE_SID>
+    <DEL_SID>sp@pk_web_3000.sp_emp_work_delete</DEL_SID>
+    <POPUP />
+    <POPUPURL />
+    <POPUP_SID1>@</POPUP_SID1>
+    <POPUP_SID2>@</POPUP_SID2>
+    <CHART />
+    <CHART_H>NaNpx</CHART_H>
+    <CHART_LABEL_COL />
+    <CHART_DATA_COL />
+    <LINKEDGRID />
+    <LINKEDGRID_TITLE />
+    <LINKEDGRID_URL />
+    <LINKEDGRID_ADDNEW />
+    <LINKEDGRID_H>NaNpx</LINKEDGRID_H>
+    <LINKEDGRID_SID>@</LINKEDGRID_SID>
+    <LINKEDGRID_SAVE_SID>@</LINKEDGRID_SAVE_SID>
+    <LINKEDGRID_DEL_SID>@</LINKEDGRID_DEL_SID>
+    <CHART_STYLE />
+    <CHART_LEGEND />
+    <LINKEDCHART_STYLE />
+    <CALLBACK_INTERVAL />
+    <CALLBACK_URL />
+    <LINKEDGRID_CHECK />
+    <TOPN />
+    <HIDE_HEADER />
+    <VISIBLE />
+  </LAYOUT_INFO>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>라인</COLUMN_NAME>
+    <COLUMN_TITLE>라인</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>WIP_DIV</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>공정</COLUMN_NAME>
+    <COLUMN_TITLE>공정</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>LINE_ID</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA>value3='[1]'</RELFIELD_DATA>
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>사번</COLUMN_NAME>
+    <COLUMN_TITLE>사번</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>부서</COLUMN_NAME>
+    <COLUMN_TITLE>부서</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>설비보전[A],설비기술[B],물류관리[C]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>연락처</COLUMN_NAME>
+    <COLUMN_TITLE>연락처</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>1일</COLUMN_NAME>
+    <COLUMN_TITLE>1일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>2일</COLUMN_NAME>
+    <COLUMN_TITLE>2일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>3일</COLUMN_NAME>
+    <COLUMN_TITLE>3일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>4일</COLUMN_NAME>
+    <COLUMN_TITLE>4일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>5일</COLUMN_NAME>
+    <COLUMN_TITLE>5일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>6일</COLUMN_NAME>
+    <COLUMN_TITLE>6일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>7일</COLUMN_NAME>
+    <COLUMN_TITLE>7일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>8일</COLUMN_NAME>
+    <COLUMN_TITLE>8일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>9일</COLUMN_NAME>
+    <COLUMN_TITLE>9일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>10일</COLUMN_NAME>
+    <COLUMN_TITLE>10일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>11일</COLUMN_NAME>
+    <COLUMN_TITLE>11일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>12일</COLUMN_NAME>
+    <COLUMN_TITLE>12일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>13일</COLUMN_NAME>
+    <COLUMN_TITLE>13일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>14일</COLUMN_NAME>
+    <COLUMN_TITLE>14일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>15일</COLUMN_NAME>
+    <COLUMN_TITLE>15일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>16일</COLUMN_NAME>
+    <COLUMN_TITLE>16일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>17일</COLUMN_NAME>
+    <COLUMN_TITLE>17일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>18일</COLUMN_NAME>
+    <COLUMN_TITLE>18일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>19일</COLUMN_NAME>
+    <COLUMN_TITLE>19일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>20일</COLUMN_NAME>
+    <COLUMN_TITLE>20일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>21일</COLUMN_NAME>
+    <COLUMN_TITLE>21일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>22일</COLUMN_NAME>
+    <COLUMN_TITLE>22일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>23일</COLUMN_NAME>
+    <COLUMN_TITLE>23일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>24일</COLUMN_NAME>
+    <COLUMN_TITLE>24일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>25일</COLUMN_NAME>
+    <COLUMN_TITLE>25일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>26일</COLUMN_NAME>
+    <COLUMN_TITLE>26일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>27일</COLUMN_NAME>
+    <COLUMN_TITLE>27일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>28일</COLUMN_NAME>
+    <COLUMN_TITLE>28일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>29일</COLUMN_NAME>
+    <COLUMN_TITLE>29일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>30일</COLUMN_NAME>
+    <COLUMN_TITLE>30일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>31일</COLUMN_NAME>
+    <COLUMN_TITLE>31일</COLUMN_TITLE>
+    <INPUT_TYPE>ComboBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID>주간[1],야간[2],주야간[3],휴무[4]</GROUP_ID>
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>@@KEY</COLUMN_NAME>
+    <COLUMN_TITLE>KEY</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE>true</VISIBLE>
+    <READONLY />
+    <APPLY_DB />
+    <NOTNULL />
+    <UPDATE />
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+  <EDIT_INFO_0>
+    <COLUMN_NAME>사원명</COLUMN_NAME>
+    <COLUMN_TITLE>사원명</COLUMN_TITLE>
+    <INPUT_TYPE>TextBox</INPUT_TYPE>
+    <DEFAULT />
+    <GROUP_ID />
+    <VISIBLE />
+    <READONLY />
+    <APPLY_DB>true</APPLY_DB>
+    <NOTNULL>true</NOTNULL>
+    <UPDATE>true</UPDATE>
+    <RELFIELD_DATA />
+    <YEAR />
+    <MONTH />
+    <DAY />
+    <SQL />
+    <TAB_INDEX>0</TAB_INDEX>
+    <TAB_TITLE />
+  </EDIT_INFO_0>
+</NewDataSet>

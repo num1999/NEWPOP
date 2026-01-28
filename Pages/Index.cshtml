@@ -1,0 +1,83 @@
+﻿@* @page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+ *@
+
+@page
+@model IndexModel
+@{ ViewData["HideMenu"] = true; }
+
+<style>
+    body {
+        /* 배경 이미지 설정 */
+        background-image: url('/images/login_bg.jpg');
+        background-size: cover; /* 화면에 꽉 차게 */
+        background-position: center; /* 가운데 정렬 */
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* 스크롤 시 고정 */
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login-overlay {
+        background-color: rgba(255, 255, 255, 0.85); /* 흰색 배경에 85% 투명도 */
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 300px;
+        transform: translate(-120px, -50px);
+    }
+
+    .container-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 50px;
+    }
+</style>
+
+<div class="container-flex">
+    <div class="login-overlay">
+        @* <h3 class="text-center mb-4" style="color: #333; font-weight: bold;">LOG IN</h3> *@
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">ID</label>
+                <input type="text" asp-for="LoginId" class="form-control" placeholder="Input the ID" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">PASSWORD</label>
+                <input type="password" asp-for="LoginPw" class="form-control" placeholder="Input the Password" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">언어 선택 (Language)</label>
+                <select asp-for="SelectedLanguage"
+                        asp-items="Model.LanguageOptions"
+                        class="form-select">
+                    <option value="">-- 언어를 선택하세요 --</option>
+                </select>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">LOG IN</button>
+                <div asp-validation-summary="All" class="text-danger small mb-3"></div>
+                <button type="button" class="btn btn-outline-secondary btn-sm">CHANGE PASSWORD</button>
+            </div>
+            <input type="hidden" asp-for="ClientIp" />
+        </form>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-3 py-2 text-center">
+                정보가 일치하지 않습니다.
+            </div>
+        }
+    </div>
+</div>

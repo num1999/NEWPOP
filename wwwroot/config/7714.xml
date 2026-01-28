@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ATTR_INFO>
+    <SID />
+    <MULTI_DB>0</MULTI_DB>
+    <SUB_PAGE />
+    <SUB_PAGE_REFRESH>False</SUB_PAGE_REFRESH>
+    <SUB_PAGE_INTERVAL />
+    <SUB_PAGE_COLS>1</SUB_PAGE_COLS>
+    <SUB_PAGE_ROWS>1</SUB_PAGE_ROWS>
+    <DEFAULT_DB />
+    <USE_PARAM>False</USE_PARAM>
+  </ATTR_INFO>
+  <LAYOUT_INFO>
+    <no>0</no>
+    <width>100%</width>
+    <height>100%</height>
+    <colspan>1</colspan>
+    <rowspan>1</rowspan>
+    <title />
+    <sid>test_chart_popup2</sid>
+    <content>chart</content>
+    <content_url />
+    <grid_topn />
+    <grid_check>false</grid_check>
+    <chart_style />
+    <edit>false</edit>
+    <edit_url />
+    <edit_addnew_disable>false</edit_addnew_disable>
+    <edit_save />
+    <edit_del />
+    <popup>false</popup>
+    <popup_url />
+    <popup_evt />
+    <popup_sid1 />
+    <popup_sid2 />
+    <linked>false</linked>
+    <linked_position />
+    <linked_height>px</linked_height>
+    <linked_count />
+    <linked_content />
+    <linked_url />
+    <linked_title />
+    <linked_sid />
+    <linked_save />
+    <linked_delete />
+    <linked_edit_url />
+    <linked_addnew_disable>false</linked_addnew_disable>
+    <linked_check>false</linked_check>
+    <linked_auto_refresh>false</linked_auto_refresh>
+    <linked_chart_style />
+    <linked_chart_label_col />
+    <linked_chart_data_col />
+    <linked_size>px</linked_size>
+    <linked_content2 />
+    <linked_url2 />
+    <linked_title2 />
+    <linked_sid2 />
+    <linked_save2 />
+    <linked_delete2 />
+    <linked_edit_url2 />
+    <linked_addnew_disable2>false</linked_addnew_disable2>
+    <linked_check2>false</linked_check2>
+    <linked_auto_refresh2>false</linked_auto_refresh2>
+    <linked_chart_style2 />
+    <linked_chart_label_col2 />
+    <linked_chart_data_col2 />
+    <linked_size2>px</linked_size2>
+    <visible />
+  </LAYOUT_INFO>
+</NewDataSet>
